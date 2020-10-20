@@ -3,13 +3,18 @@ package handler_test
 import (
 	"bytes"
 	"encoding/json"
+	"log"
 	"net/http/httptest"
 	"testing"
+	"time"
 
 	"github.com/ariefsam/poc-event-sourcing/event-service/handler"
 )
 
 func TestWriteHandler(t *testing.T) {
+	log.Println("time", time.Now().Unix())
+	time.Sleep(100 * time.Millisecond)
+	log.Println(time.Now().UnixNano())
 	event := map[string]interface{}{
 		"EventName": "UserCreated",
 		"Payload": map[string]interface{}{
@@ -17,7 +22,7 @@ func TestWriteHandler(t *testing.T) {
 			"Name":  "Arief Hidayatulloh",
 			"Email": "arief.hidayatulloh@gmail.com",
 			"Role":  "User",
-			"Creator": map[string]interface{}{
+			"CreatedBy": map[string]interface{}{
 				"ID":    "j1",
 				"Name":  "Nam Indra",
 				"Email": "nam@jojonomic.com",
@@ -31,8 +36,12 @@ func TestWriteHandler(t *testing.T) {
 
 	r := httptest.NewRequest("GET", "http://xx/x", bytes.NewReader(requestJson))
 	w := httptest.NewRecorder()
-	handler.WriteHandler(w, r)
 
-	var mockEventService EventServiceMock
+	mockEventService := GetEventServiceMock()
+	h := handler.HttpHandler{
+		EventService: &mockEventService,
+	}
+	h.WriteHandler(w, r)
+
 	mockEventService.AssertCalled(t, "Write", event)
 }
