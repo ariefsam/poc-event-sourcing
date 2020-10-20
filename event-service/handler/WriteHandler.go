@@ -2,6 +2,6 @@ package handler
 
 import "net/http"
 
-func WriteHandler(w http.ResponseWriter, r *http.Request) {
+func (h *HttpHandler) WriteHandler(w http.ResponseWriter, r *http.Request) {
 
 }
