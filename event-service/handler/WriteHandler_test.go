@@ -28,7 +28,6 @@ func TestWriteHandler(t *testing.T) {
 				"Email": "nam@jojonomic.com",
 				"Role":  "Admin",
 			},
-			"CreatedAtTimestamp": 1603229314,
 		},
 	}
 

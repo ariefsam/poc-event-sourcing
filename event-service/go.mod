@@ -1,4 +1,4 @@
-module github.com/ariefsam/poc-event-sourcing
+module github.com/ariefsam/poc-event-sourcing/event-service
 
 go 1.15
 

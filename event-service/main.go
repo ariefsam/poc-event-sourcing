@@ -20,6 +20,7 @@ func GetRoutes() http.Handler {
 	return r
 }
 
+// Get handler that injected with implementation service
 func GetInjectedHandler() (h handler.HttpHandler) {
 
 	return
