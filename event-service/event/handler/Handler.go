@@ -3,4 +3,5 @@ package handler
 type HttpHandler struct {
 	EventService
 	ErrorLog
+	response
 }
