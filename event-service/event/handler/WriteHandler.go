@@ -11,6 +11,7 @@ func (h *HttpHandler) WriteHandler(w http.ResponseWriter, r *http.Request) {
 	id, err := h.EventService.Write(payload)
 	if err != nil {
 		h.response.Error(w, err, http.StatusBadGateway)
+		h.ErrorLog.Log(err)
 	}
 	h.response.JSON(w, id, http.StatusOK)
 }
