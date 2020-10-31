@@ -1,4 +1,4 @@
-module github.com/ariefsam/poc-event-sourcing/user-faker
+module event-user-faker
 
 go 1.15
 

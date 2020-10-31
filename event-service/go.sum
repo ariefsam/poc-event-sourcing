@@ -1,6 +1,8 @@
 github.com/NYTimes/gziphandler v1.1.1 h1:ZUDjpQae29j0ryrS0u/B8HZfJBtBQHjqw2rQ2cqUQ3I=
 github.com/NYTimes/gziphandler v1.1.1/go.mod h1:n/CVRwUEOgIxrgPvAQhUUr9oeUtvrhMomdKFjzJNB0c=
-github.com/ariefsam/poc-event-sourcing v0.0.0-20201021113913-0c75f6326951 h1:hb2ou0AVNhMLKOI5gyNoduZoJdU2nh1svOW2+6sVxL0=
+github.com/ariefsam/poc-event-sourcing v0.0.0-20201023080147-0a450600cebc h1:omD4UDARD1yUXrfzklwUT7NlA7EzN4/MM690Mm2TTGw=
+github.com/ariefsam/poc-event-sourcing/event-service v0.0.0-20201023080147-0a450600cebc h1:q3yKXauBa73eYNjW2Z4h+HbqAInhWa/JqzPO+hch8zw=
+github.com/ariefsam/poc-event-sourcing/event-service v0.0.0-20201023080147-0a450600cebc/go.mod h1:6m/rELyc62cZb/6yeeONzS6ifTJxn/kzNWwgFw81kgI=
 github.com/davecgh/go-spew v1.1.0 h1:ZDRjVQ15GmhC3fiQ8ni8+OwkZQO4DARzQgrnXU1Liz8=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/felixge/httpsnoop v1.0.1 h1:lvB5Jl89CsZtGIWuTcDM1E/vkVs49/Ml7JJe07l8SPQ=

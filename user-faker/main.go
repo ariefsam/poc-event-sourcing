@@ -7,15 +7,13 @@ import (
 	"log"
 	"net/http"
 
-	"time"
-
 	"syreclabs.com/go/faker"
 )
 
 func main() {
-	for i := 1; i <= 1000; i++ {
+	for i := 1; i <= 10000; i++ {
 		insertUser()
-		time.Sleep(100 * time.Millisecond)
+		// time.Sleep(100 * time.Millisecond)
 	}
 }
 
